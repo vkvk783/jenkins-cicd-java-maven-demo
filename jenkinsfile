@@ -1,11 +1,6 @@
 def tomcatServerUrl = "http://172.31.14.95"
 pipeline {
-  agent {
-    node {
-      label 'jenkins-slave'
-    }
-  }
-
+  agent any
   stages {
     //Use this code for inline pipeline script option
     /* stage('Code checkout') {
